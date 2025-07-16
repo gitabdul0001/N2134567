@@ -138,7 +138,7 @@ const OnboardingFlow: React.FC = () => {
     return currentStep !== 0; // Hide next button on signup form since it has its own submit
   };
   const handleDashboardClick = () => {
-    window.location.href = 'https://app.reaxo.com';
+    window.location.href = 'https://app.reaxo.xyz';
   };
   return <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 flex flex-col">
       <div className="flex-1 flex flex-col max-w-4xl mx-auto w-full px-4 sm:px-6 md:px-8 py-8 md:py-12">
