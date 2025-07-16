@@ -19,18 +19,16 @@ const FeatureIntroStep: React.FC<FeatureIntroStepProps> = ({
         features: [{
           icon: Clock,
           text: 'Optimal timing recommendations',
-          mpid: "fcbc9256-3d38-4e19-8fcf-ce5a0020d110"
+          mpid: "ebbd4ea7-c861-41ec-b198-c7995350f0b4"
         }, {
           icon: Zap,
           text: 'Bulk scheduling across platforms',
-          mpid: "fec12435-79fd-4457-84c3-ed04ed8b1b7c"
+          mpid: "8f7a306c-cb92-4021-82bd-29e9eb2ba534"
         }, {
           icon: Users,
           text: 'Team collaboration tools',
-          mpid: "19fb2aa3-25d6-44ca-8eec-05c2d7d28d41"
-        }],
-        gradient: 'from-blue-500 to-cyan-500',
-        bgGradient: 'from-blue-50 to-cyan-50'
+          mpid: "8f45f83c-eecc-424f-ac1a-91211224954e"
+        }]
       };
     } else {
       return {
@@ -38,30 +36,26 @@ const FeatureIntroStep: React.FC<FeatureIntroStepProps> = ({
         features: [{
           icon: TrendingUp,
           text: 'Real-time performance metrics',
-          mpid: "83e952eb-637e-4868-b603-28b00da0e09d"
+          mpid: "a7824cac-2ad4-4225-8bd0-cf6237b5c52e"
         }, {
           icon: Users,
           text: 'Audience insights & demographics',
-          mpid: "4127de73-bd17-4d5c-9b57-292f4ff19a97"
+          mpid: "afceeb89-8c91-4318-8a88-84d013a206cb"
         }, {
           icon: Zap,
           text: 'Competitor analysis',
-          mpid: "86281f5d-5ff3-4abc-8122-73290204ec50"
-        }],
-        gradient: 'from-purple-500 to-pink-500',
-        bgGradient: 'from-purple-50 to-pink-50'
+          mpid: "d91da906-b8fd-4e9b-b0d5-39a87ecbe0f8"
+        }]
       };
     }
   };
   const {
     mainIcon: MainIcon,
-    features,
-    gradient,
-    bgGradient
+    features
   } = getFeatureDetails();
-  return <div className="text-center space-y-8" data-magicpath-id="0" data-magicpath-path="FeatureIntroStep.tsx">
+  return <div className="text-center space-y-12" data-magicpath-id="0" data-magicpath-path="FeatureIntroStep.tsx">
       <motion.div initial={{
-      scale: 0.8,
+      scale: 0.9,
       opacity: 0
     }} animate={{
       scale: 1,
@@ -70,23 +64,23 @@ const FeatureIntroStep: React.FC<FeatureIntroStepProps> = ({
       duration: 0.5,
       ease: "easeOut"
     }} className="space-y-6" data-magicpath-id="1" data-magicpath-path="FeatureIntroStep.tsx">
-        <div className={`w-24 h-24 mx-auto rounded-3xl bg-gradient-to-br ${gradient} flex items-center justify-center shadow-2xl`} data-magicpath-id="2" data-magicpath-path="FeatureIntroStep.tsx">
-          <MainIcon className="w-12 h-12 text-white" data-magicpath-id="3" data-magicpath-path="FeatureIntroStep.tsx" />
+        <div className="w-16 h-16 mx-auto rounded-2xl bg-gray-100 flex items-center justify-center" data-magicpath-id="2" data-magicpath-path="FeatureIntroStep.tsx">
+          <MainIcon className="w-8 h-8 text-gray-600" data-magicpath-id="3" data-magicpath-path="FeatureIntroStep.tsx" />
         </div>
 
         <div className="space-y-4" data-magicpath-id="4" data-magicpath-path="FeatureIntroStep.tsx">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900" data-magicpath-id="5" data-magicpath-path="FeatureIntroStep.tsx">
+          <h2 className="text-4xl md:text-5xl font-light text-gray-900" data-magicpath-id="5" data-magicpath-path="FeatureIntroStep.tsx">
             {title}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed" data-magicpath-id="6" data-magicpath-path="FeatureIntroStep.tsx">
+          <p className="text-lg text-gray-500 max-w-lg mx-auto font-light leading-relaxed" data-magicpath-id="6" data-magicpath-path="FeatureIntroStep.tsx">
             {description}
           </p>
         </div>
       </motion.div>
 
-      <div className={`max-w-2xl mx-auto p-8 rounded-3xl bg-gradient-to-br ${bgGradient} border border-gray-100`} data-magicpath-id="7" data-magicpath-path="FeatureIntroStep.tsx">
+      <div className="max-w-md mx-auto p-8 rounded-3xl bg-gray-50 border border-gray-100" data-magicpath-id="7" data-magicpath-path="FeatureIntroStep.tsx">
         <div className="space-y-6" data-magicpath-id="8" data-magicpath-path="FeatureIntroStep.tsx">
-          <h3 className="text-xl font-semibold text-gray-900 mb-6" data-magicpath-id="9" data-magicpath-path="FeatureIntroStep.tsx">
+          <h3 className="text-lg font-light text-gray-900" data-magicpath-id="9" data-magicpath-path="FeatureIntroStep.tsx">
             Key Features
           </h3>
           
@@ -99,11 +93,11 @@ const FeatureIntroStep: React.FC<FeatureIntroStepProps> = ({
             x: 0
           }} transition={{
             delay: 0.3 + index * 0.1
-          }} className="flex items-center space-x-4 p-4 bg-white rounded-2xl shadow-sm" data-magicpath-uuid={(feature as any)["mpid"] ?? "unsafe"} data-magicpath-id="11" data-magicpath-path="FeatureIntroStep.tsx">
-                <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${gradient} flex items-center justify-center flex-shrink-0`} data-magicpath-uuid={(feature as any)["mpid"] ?? "unsafe"} data-magicpath-id="12" data-magicpath-path="FeatureIntroStep.tsx">
-                  <feature.icon className="w-5 h-5 text-white" data-magicpath-uuid={(feature as any)["mpid"] ?? "unsafe"} data-magicpath-id="13" data-magicpath-path="FeatureIntroStep.tsx" />
+          }} className="flex items-center space-x-4 p-4 bg-white rounded-xl" data-magicpath-uuid={(feature as any)["mpid"] ?? "unsafe"} data-magicpath-id="11" data-magicpath-path="FeatureIntroStep.tsx">
+                <div className="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0" data-magicpath-uuid={(feature as any)["mpid"] ?? "unsafe"} data-magicpath-id="12" data-magicpath-path="FeatureIntroStep.tsx">
+                  <feature.icon className="w-4 h-4 text-gray-600" data-magicpath-uuid={(feature as any)["mpid"] ?? "unsafe"} data-magicpath-id="13" data-magicpath-path="FeatureIntroStep.tsx" />
                 </div>
-                <span className="text-gray-700 font-medium" data-magicpath-uuid={(feature as any)["mpid"] ?? "unsafe"} data-magicpath-field="text:unknown" data-magicpath-id="14" data-magicpath-path="FeatureIntroStep.tsx">
+                <span className="text-gray-700 font-light text-sm" data-magicpath-uuid={(feature as any)["mpid"] ?? "unsafe"} data-magicpath-field="text:unknown" data-magicpath-id="14" data-magicpath-path="FeatureIntroStep.tsx">
                   {feature.text}
                 </span>
               </motion.div>)}
@@ -117,7 +111,7 @@ const FeatureIntroStep: React.FC<FeatureIntroStepProps> = ({
       opacity: 1
     }} transition={{
       delay: 0.8
-    }} className="text-sm text-gray-500" data-magicpath-id="15" data-magicpath-path="FeatureIntroStep.tsx">
+    }} className="text-xs text-gray-400 font-light" data-magicpath-id="15" data-magicpath-path="FeatureIntroStep.tsx">
         <p data-magicpath-id="16" data-magicpath-path="FeatureIntroStep.tsx">
           Ready to explore more? Let's continue your journey with Reaxo.
         </p>
