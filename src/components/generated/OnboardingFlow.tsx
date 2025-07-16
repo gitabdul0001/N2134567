@@ -43,8 +43,8 @@ const OnboardingFlow: React.FC = () => {
                 analyze performance, and grow your audience with clean insights.
               </p>
             </div>
-            <div className="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full border-2 border-gray-200 flex items-center justify-center bg-white shadow-sm" data-magicpath-id="5" data-magicpath-path="OnboardingFlow.tsx">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="82" height="82" viewBox="0 0 375 374.999991" preserveAspectRatio="xMidYMid meet" version="1.2" data-magicpath-id="6" data-magicpath-path="OnboardingFlow.tsx">
+            <div className="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full border-2 border-gray-200 flex items-center justify-center bg-white shadow-sm p-2" data-magicpath-id="5" data-magicpath-path="OnboardingFlow.tsx">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 375 374.999991" preserveAspectRatio="xMidYMid meet" version="1.2" data-magicpath-id="6" data-magicpath-path="OnboardingFlow.tsx">
                 <defs data-magicpath-id="7" data-magicpath-path="OnboardingFlow.tsx">
                   <clipPath id="7a447a7b48" data-magicpath-id="8" data-magicpath-path="OnboardingFlow.tsx">
                     <path d="M 109.125 181.933594 L 161.625 181.933594 L 161.625 234.433594 L 109.125 234.433594 Z M 109.125 181.933594 " data-magicpath-id="9" data-magicpath-path="OnboardingFlow.tsx" />

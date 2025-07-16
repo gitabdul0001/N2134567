@@ -21,15 +21,15 @@ const FeatureIntroStep: React.FC<FeatureIntroStepProps> = ({
         features: [{
           icon: Clock,
           text: 'Optimal timing recommendations',
-          mpid: "970a2cd9-2864-41d6-aeac-ef86ffc22166"
+          mpid: "7298c874-71bf-4a12-99e3-80ffc676bb08"
         }, {
           icon: Zap,
           text: 'Bulk scheduling across platforms',
-          mpid: "971446b4-d22b-4433-94fd-986992e4f9c9"
+          mpid: "14041d2d-8bd8-41a3-a239-10c87ddac71a"
         }, {
           icon: Users,
           text: 'Team collaboration tools',
-          mpid: "8f0ab693-40d3-405b-a6a5-44b3e072c955"
+          mpid: "858c08db-a87e-4989-b629-0c25a904fa21"
         }]
       };
     } else {
@@ -38,15 +38,15 @@ const FeatureIntroStep: React.FC<FeatureIntroStepProps> = ({
         features: [{
           icon: TrendingUp,
           text: 'Real-time performance metrics',
-          mpid: "7359fd69-23be-4634-8af6-975cde38e5cb"
+          mpid: "26e95c74-8224-440b-a353-a8b17c08b2ac"
         }, {
           icon: Users,
           text: 'Audience insights & demographics',
-          mpid: "5d019d1a-754a-49cc-8925-13259fb06ce9"
+          mpid: "37f70238-22ae-4fda-95f5-0b883541c10f"
         }, {
           icon: Zap,
           text: 'Competitor analysis',
-          mpid: "04969461-9354-4a2e-81fb-2ad4ea357d99"
+          mpid: "0d4a747c-834c-49b8-908a-c7356003865a"
         }]
       };
     }

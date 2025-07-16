@@ -77,8 +77,8 @@ const SignupForm: React.FC<SignupFormProps> = ({
         y: 0
       }} transition={{
         duration: 0.5
-      }} className="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full border-2 border-gray-200 flex items-center justify-center bg-white shadow-sm" data-magicpath-id="2" data-magicpath-path="SignupForm.tsx">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="82" height="82" viewBox="0 0 375 374.999991" preserveAspectRatio="xMidYMid meet" version="1.2" data-magicpath-id="3" data-magicpath-path="SignupForm.tsx">
+      }} className="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full border-2 border-gray-200 flex items-center justify-center bg-white shadow-sm p-2" data-magicpath-id="2" data-magicpath-path="SignupForm.tsx">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 375 374.999991" preserveAspectRatio="xMidYMid meet" version="1.2" data-magicpath-id="3" data-magicpath-path="SignupForm.tsx">
             <defs data-magicpath-id="4" data-magicpath-path="SignupForm.tsx">
               <clipPath id="7a447a7b48" data-magicpath-id="5" data-magicpath-path="SignupForm.tsx">
                 <path d="M 109.125 181.933594 L 161.625 181.933594 L 161.625 234.433594 L 109.125 234.433594 Z M 109.125 181.933594 " data-magicpath-id="6" data-magicpath-path="SignupForm.tsx" />
