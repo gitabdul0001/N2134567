@@ -39,7 +39,7 @@ const OnboardingFlow: React.FC = () => {
                 Welcome to Reaxo
               </h1>
               <p className="text-base md:text-lg text-gray-500 max-w-lg mx-auto font-light leading-relaxed px-4" data-magicpath-id="4" data-magicpath-path="OnboardingFlow.tsx">
-                Your minimalist social media analytics platform. Schedule posts, 
+                Your social media analytics platform. Schedule posts, 
                 analyze performance, and grow your audience with clean insights.
               </p>
             </div>
