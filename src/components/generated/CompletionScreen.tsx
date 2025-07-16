@@ -208,9 +208,9 @@ const CompletionScreen: React.FC = () => {
     setup();
   };
   return <>      
-      <div id="emitter" data-magicpath-id="0" data-magicpath-path="CompletionScreen.tsx"></div>
+      <div id="emitter"></div>
       
-      <div className="text-center space-y-8 md:space-y-12" data-magicpath-id="1" data-magicpath-path="CompletionScreen.tsx">
+      <div className="text-center space-y-8 md:space-y-12">
         <motion.div initial={{
         scale: 0
       }} animate={{
@@ -220,8 +220,8 @@ const CompletionScreen: React.FC = () => {
         stiffness: 200,
         damping: 20,
         delay: 0.2
-      }} className="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center shadow-lg" data-magicpath-id="2" data-magicpath-path="CompletionScreen.tsx">
-          <Check className="w-8 h-8 md:w-10 md:h-10 text-white" data-magicpath-id="3" data-magicpath-path="CompletionScreen.tsx" />
+      }} className="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center shadow-lg">
+          <Check className="w-8 h-8 md:w-10 md:h-10 text-white" />
         </motion.div>
 
         <motion.div initial={{
@@ -232,11 +232,11 @@ const CompletionScreen: React.FC = () => {
         y: 0
       }} transition={{
         delay: 0.4
-      }} className="space-y-4 md:space-y-6 px-4" data-magicpath-id="4" data-magicpath-path="CompletionScreen.tsx">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-900" data-magicpath-id="5" data-magicpath-path="CompletionScreen.tsx">
+      }} className="space-y-4 md:space-y-6 px-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-900">
             You're All Set
           </h2>
-          <p className="text-base md:text-lg text-gray-500 max-w-lg mx-auto font-light leading-relaxed" data-magicpath-id="6" data-magicpath-path="CompletionScreen.tsx">
+          <p className="text-base md:text-lg text-gray-500 max-w-lg mx-auto font-light leading-relaxed">
             Congratulations! You've successfully completed the Reaxo onboarding. 
             Your social media management journey starts now.
           </p>
@@ -248,13 +248,13 @@ const CompletionScreen: React.FC = () => {
         opacity: 1
       }} transition={{
         delay: 0.6
-      }} className="max-w-sm mx-auto px-4" data-magicpath-id="7" data-magicpath-path="CompletionScreen.tsx">
-          <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-6 md:p-8 border border-gray-100 shadow-sm" data-magicpath-id="8" data-magicpath-path="CompletionScreen.tsx">
-            <h3 className="text-base md:text-lg font-light text-gray-900 mb-4 md:mb-6" data-magicpath-id="9" data-magicpath-path="CompletionScreen.tsx">
+      }} className="max-w-sm mx-auto px-4">
+          <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-6 md:p-8 border border-gray-100 shadow-sm">
+            <h3 className="text-base md:text-lg font-light text-gray-900 mb-4 md:mb-6">
               What You've Accomplished
             </h3>
             
-            <div className="space-y-3 md:space-y-4" data-magicpath-id="10" data-magicpath-path="CompletionScreen.tsx">
+            <div className="space-y-3 md:space-y-4">
               {achievements.map((achievement, index) => <motion.div key={index} initial={{
               opacity: 0,
               x: -20
@@ -263,11 +263,11 @@ const CompletionScreen: React.FC = () => {
               x: 0
             }} transition={{
               delay: 0.8 + index * 0.1
-            }} className="flex items-center space-x-3" data-magicpath-uuid={(achievement as any)["mpid"] ?? "unsafe"} data-magicpath-id="11" data-magicpath-path="CompletionScreen.tsx">
-                  <div className="w-4 h-4 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center flex-shrink-0" data-magicpath-uuid={(achievement as any)["mpid"] ?? "unsafe"} data-magicpath-id="12" data-magicpath-path="CompletionScreen.tsx">
-                    <Check className="w-2 h-2 text-white" data-magicpath-uuid={(achievement as any)["mpid"] ?? "unsafe"} data-magicpath-id="13" data-magicpath-path="CompletionScreen.tsx" />
+            }} className="flex items-center space-x-3">
+                  <div className="w-4 h-4 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Check className="w-2 h-2 text-white" />
                   </div>
-                  <span className="text-gray-700 font-light text-xs md:text-sm text-left" data-magicpath-uuid={(achievement as any)["mpid"] ?? "unsafe"} data-magicpath-id="14" data-magicpath-path="CompletionScreen.tsx">
+                  <span className="text-gray-700 font-light text-xs md:text-sm text-left">
                     {achievement}
                   </span>
                 </motion.div>)}
@@ -283,14 +283,14 @@ const CompletionScreen: React.FC = () => {
         y: 0
       }} transition={{
         delay: 1.2
-      }} className="space-y-4 md:space-y-6 px-4" data-magicpath-id="15" data-magicpath-path="CompletionScreen.tsx">
-          <div className="flex items-center justify-center space-x-2 text-gray-600" data-magicpath-id="16" data-magicpath-path="CompletionScreen.tsx">
-            <span className="font-light text-sm" data-magicpath-id="17" data-magicpath-path="CompletionScreen.tsx">Ready to dive in?</span>
-            <ArrowRight className="w-4 h-4" data-magicpath-id="18" data-magicpath-path="CompletionScreen.tsx" />
+      }} className="space-y-4 md:space-y-6 px-4">
+          <div className="flex items-center justify-center space-x-2 text-gray-600">
+            <span className="font-light text-sm">Ready to dive in?</span>
+            <ArrowRight className="w-4 h-4" />
           </div>
           
-          <div className="text-xs text-gray-400 max-w-md mx-auto font-light" data-magicpath-id="19" data-magicpath-path="CompletionScreen.tsx">
-            <p data-magicpath-id="20" data-magicpath-path="CompletionScreen.tsx">
+          <div className="text-xs text-gray-400 max-w-md mx-auto font-light">
+            <p>
               Your dashboard is ready with all the tools you need to create, 
               schedule, and analyze your social media content. Let's start building 
               your online presence.
@@ -306,10 +306,10 @@ const CompletionScreen: React.FC = () => {
         scale: 1
       }} transition={{
         delay: 1.4
-      }} className="pt-4" data-magicpath-id="21" data-magicpath-path="CompletionScreen.tsx">
-          <button onClick={() => window.location.href = 'https://app.reaxo.com'} className="inline-flex items-center space-x-2 px-4 md:px-6 py-2 md:py-3 bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-full font-light text-xs md:text-sm shadow-sm hover:shadow-md transition-all duration-200 hover:from-gray-700 hover:to-gray-800" data-magicpath-id="22" data-magicpath-path="CompletionScreen.tsx">
-            <span data-magicpath-id="23" data-magicpath-path="CompletionScreen.tsx">Go to Dashboard</span>
-            <ArrowRight className="w-3 h-3" data-magicpath-id="24" data-magicpath-path="CompletionScreen.tsx" />
+      }} className="pt-4">
+          <button onClick={() => window.location.href = 'https://app.reaxo.com'} className="inline-flex items-center space-x-2 px-4 md:px-6 py-2 md:py-3 bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-full font-light text-xs md:text-sm shadow-sm hover:shadow-md transition-all duration-200 hover:from-gray-700 hover:to-gray-800">
+            <span>Go to Dashboard</span>
+            <ArrowRight className="w-3 h-3" />
           </button>
         </motion.div>
       </div>
