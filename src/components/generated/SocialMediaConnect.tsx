@@ -61,42 +61,42 @@ const SocialMediaConnect: React.FC = () => {
     connected: false,
     loading: false,
     icon: FacebookIcon,
-    mpid: "2159e852-a935-4cae-a431-a7687fcb6ce2"
+    mpid: "aca592bb-e882-48a7-9b61-dec7f06a720a"
   }, {
     id: 'instagram',
     name: 'Instagram',
     connected: false,
     loading: false,
     icon: InstagramIcon,
-    mpid: "9484f75f-d45a-4fd6-9d7d-036aafd5066d"
+    mpid: "6795c3ce-2a9e-4b39-b209-3afc47dab663"
   }, {
     id: 'twitter',
     name: 'X',
     connected: false,
     loading: false,
     icon: XIcon,
-    mpid: "50dcd9d1-efd5-42e6-879f-25ed8813b76c"
+    mpid: "2977f0a0-58fd-4124-b68f-2a1f80b1e991"
   }, {
     id: 'linkedin',
     name: 'LinkedIn',
     connected: false,
     loading: false,
     icon: LinkedInIcon,
-    mpid: "01fbd2e2-5438-4ac5-8b99-61fc02145b7e"
+    mpid: "1b00a503-9bbd-4e35-87a2-3ca8e57615d8"
   }, {
     id: 'youtube',
     name: 'YouTube',
     connected: false,
     loading: false,
     icon: YouTubeIcon,
-    mpid: "fcb09165-134e-4f1c-a95a-122b9ff52946"
+    mpid: "3b8999b0-c8bf-4139-a2c5-b8802bb8edfe"
   }, {
     id: 'tiktok',
     name: 'TikTok',
     connected: false,
     loading: false,
     icon: TikTokIcon,
-    mpid: "94032ce7-3f02-4f38-8ce2-036f38d568cd"
+    mpid: "043d61cb-8ce8-4782-94bc-1ea33ba125ee"
   }]);
   const handleConnect = async (platformId: string) => {
     setPlatforms(prev => prev.map(p => p.id === platformId ? {

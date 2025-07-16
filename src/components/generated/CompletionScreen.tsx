@@ -307,9 +307,10 @@ const CompletionScreen: React.FC = () => {
       }} transition={{
         delay: 1.4
       }} className="pt-4" data-magicpath-id="21" data-magicpath-path="CompletionScreen.tsx">
-          <div className="inline-flex items-center space-x-2 px-4 md:px-6 py-2 md:py-3 bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-full font-light text-xs md:text-sm shadow-sm" data-magicpath-id="22" data-magicpath-path="CompletionScreen.tsx">
-            <span data-magicpath-id="23" data-magicpath-path="CompletionScreen.tsx">Welcome to Reaxo</span>
-          </div>
+          <button onClick={() => window.location.href = 'https://app.reaxo.com'} className="inline-flex items-center space-x-2 px-4 md:px-6 py-2 md:py-3 bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-full font-light text-xs md:text-sm shadow-sm hover:shadow-md transition-all duration-200 hover:from-gray-700 hover:to-gray-800" data-magicpath-id="22" data-magicpath-path="CompletionScreen.tsx">
+            <span data-magicpath-id="23" data-magicpath-path="CompletionScreen.tsx">Go to Dashboard</span>
+            <ArrowRight className="w-3 h-3" data-magicpath-id="24" data-magicpath-path="CompletionScreen.tsx" />
+          </button>
         </motion.div>
       </div>
     </>;

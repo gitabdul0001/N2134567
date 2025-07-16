@@ -137,6 +137,9 @@ const OnboardingFlow: React.FC = () => {
   const shouldShowNextButton = () => {
     return currentStep !== 0; // Hide next button on signup form since it has its own submit
   };
+  const handleDashboardClick = () => {
+    window.location.href = 'https://app.reaxo.com';
+  };
   return <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 flex flex-col" data-magicpath-id="56" data-magicpath-path="OnboardingFlow.tsx">
       <div className="flex-1 flex flex-col max-w-4xl mx-auto w-full px-4 sm:px-6 md:px-8 py-8 md:py-12" data-magicpath-id="57" data-magicpath-path="OnboardingFlow.tsx">
         <ProgressIndicator currentStep={currentStep + 1} totalSteps={TOTAL_STEPS} data-magicpath-id="58" data-magicpath-path="OnboardingFlow.tsx" />
@@ -167,7 +170,7 @@ const OnboardingFlow: React.FC = () => {
             <span data-magicpath-id="65" data-magicpath-path="OnboardingFlow.tsx">Back</span>
           </button>
 
-          {shouldShowNextButton() && <button onClick={currentStep === TOTAL_STEPS - 1 ? () => console.log('Go to Dashboard') : nextStep} className="flex items-center space-x-2 md:space-x-3 px-6 md:px-8 py-2 md:py-3 bg-gray-900 text-white rounded-full font-light hover:bg-gray-800 transition-all duration-200 shadow-sm hover:shadow-md" data-magicpath-id="66" data-magicpath-path="OnboardingFlow.tsx">
+          {shouldShowNextButton() && <button onClick={currentStep === TOTAL_STEPS - 1 ? handleDashboardClick : nextStep} className="flex items-center space-x-2 md:space-x-3 px-6 md:px-8 py-2 md:py-3 bg-gray-900 text-white rounded-full font-light hover:bg-gray-800 transition-all duration-200 shadow-sm hover:shadow-md" data-magicpath-id="66" data-magicpath-path="OnboardingFlow.tsx">
               <span data-magicpath-id="67" data-magicpath-path="OnboardingFlow.tsx">{getButtonText()}</span>
               {currentStep !== TOTAL_STEPS - 1 && <ArrowRight className="w-4 h-4" data-magicpath-id="68" data-magicpath-path="OnboardingFlow.tsx" />}
             </button>}
