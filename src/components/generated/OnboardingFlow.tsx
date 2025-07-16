@@ -21,18 +21,18 @@ const OnboardingFlow: React.FC = () => {
   const renderStepContent = () => {
     switch (currentStep) {
       case 1:
-        return <div className="text-center space-y-12" data-magicpath-id="0" data-magicpath-path="OnboardingFlow.tsx">
-            <div className="space-y-6" data-magicpath-id="1" data-magicpath-path="OnboardingFlow.tsx">
-              <h1 className="text-5xl md:text-6xl font-light text-gray-900 tracking-tight" data-magicpath-id="2" data-magicpath-path="OnboardingFlow.tsx">
+        return <div className="text-center space-y-8 md:space-y-12" data-magicpath-id="0" data-magicpath-path="OnboardingFlow.tsx">
+            <div className="space-y-4 md:space-y-6" data-magicpath-id="1" data-magicpath-path="OnboardingFlow.tsx">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 tracking-tight px-4" data-magicpath-id="2" data-magicpath-path="OnboardingFlow.tsx">
                 Welcome to Reaxo
               </h1>
-              <p className="text-lg text-gray-500 max-w-lg mx-auto font-light leading-relaxed" data-magicpath-id="3" data-magicpath-path="OnboardingFlow.tsx">
+              <p className="text-base md:text-lg text-gray-500 max-w-lg mx-auto font-light leading-relaxed px-4" data-magicpath-id="3" data-magicpath-path="OnboardingFlow.tsx">
                 Your minimalist social media analytics platform. Schedule posts, 
                 analyze performance, and grow your audience with clean insights.
               </p>
             </div>
-            <div className="w-16 h-16 mx-auto bg-gray-900 rounded-full flex items-center justify-center" data-magicpath-id="4" data-magicpath-path="OnboardingFlow.tsx">
-              <span className="text-2xl font-light text-white" data-magicpath-id="5" data-magicpath-path="OnboardingFlow.tsx">R</span>
+            <div className="w-12 h-12 md:w-16 md:h-16 mx-auto bg-gray-900 rounded-full flex items-center justify-center" data-magicpath-id="4" data-magicpath-path="OnboardingFlow.tsx">
+              <span className="text-xl md:text-2xl font-light text-white" data-magicpath-id="5" data-magicpath-path="OnboardingFlow.tsx">R</span>
             </div>
           </div>;
       case 2:
@@ -48,10 +48,10 @@ const OnboardingFlow: React.FC = () => {
     }
   };
   return <div className="min-h-screen bg-white flex flex-col" data-magicpath-id="10" data-magicpath-path="OnboardingFlow.tsx">
-      <div className="flex-1 flex flex-col max-w-4xl mx-auto w-full px-8 py-12" data-magicpath-id="11" data-magicpath-path="OnboardingFlow.tsx">
+      <div className="flex-1 flex flex-col max-w-4xl mx-auto w-full px-4 sm:px-6 md:px-8 py-8 md:py-12" data-magicpath-id="11" data-magicpath-path="OnboardingFlow.tsx">
         <ProgressIndicator currentStep={currentStep} totalSteps={TOTAL_STEPS} data-magicpath-id="12" data-magicpath-path="OnboardingFlow.tsx" />
         
-        <div className="flex-1 flex items-center justify-center py-16" data-magicpath-id="13" data-magicpath-path="OnboardingFlow.tsx">
+        <div className="flex-1 flex items-center justify-center py-8 md:py-16" data-magicpath-id="13" data-magicpath-path="OnboardingFlow.tsx">
           <AnimatePresence mode="wait" data-magicpath-id="14" data-magicpath-path="OnboardingFlow.tsx">
             <motion.div key={currentStep} initial={{
             opacity: 0,
@@ -71,13 +71,13 @@ const OnboardingFlow: React.FC = () => {
           </AnimatePresence>
         </div>
 
-        <div className="flex justify-between items-center pt-8" data-magicpath-id="16" data-magicpath-path="OnboardingFlow.tsx">
-          <button onClick={prevStep} disabled={currentStep === 1} className={`flex items-center space-x-3 px-6 py-3 rounded-full font-light transition-all duration-200 ${currentStep === 1 ? 'text-gray-300 cursor-not-allowed' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'}`} data-magicpath-id="17" data-magicpath-path="OnboardingFlow.tsx">
+        <div className="flex flex-col sm:flex-row justify-between items-center pt-6 md:pt-8 space-y-4 sm:space-y-0" data-magicpath-id="16" data-magicpath-path="OnboardingFlow.tsx">
+          <button onClick={prevStep} disabled={currentStep === 1} className={`flex items-center space-x-2 md:space-x-3 px-4 md:px-6 py-2 md:py-3 rounded-full font-light transition-all duration-200 ${currentStep === 1 ? 'text-gray-300 cursor-not-allowed' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'}`} data-magicpath-id="17" data-magicpath-path="OnboardingFlow.tsx">
             <ArrowLeft className="w-4 h-4" data-magicpath-id="18" data-magicpath-path="OnboardingFlow.tsx" />
             <span data-magicpath-id="19" data-magicpath-path="OnboardingFlow.tsx">Back</span>
           </button>
 
-          <button onClick={currentStep === TOTAL_STEPS ? () => console.log('Go to Dashboard') : nextStep} className="flex items-center space-x-3 px-8 py-3 bg-gray-900 text-white rounded-full font-light hover:bg-gray-800 transition-all duration-200" data-magicpath-id="20" data-magicpath-path="OnboardingFlow.tsx">
+          <button onClick={currentStep === TOTAL_STEPS ? () => console.log('Go to Dashboard') : nextStep} className="flex items-center space-x-2 md:space-x-3 px-6 md:px-8 py-2 md:py-3 bg-gray-900 text-white rounded-full font-light hover:bg-gray-800 transition-all duration-200" data-magicpath-id="20" data-magicpath-path="OnboardingFlow.tsx">
             <span data-magicpath-id="21" data-magicpath-path="OnboardingFlow.tsx">{currentStep === TOTAL_STEPS ? 'Go to Dashboard' : 'Next'}</span>
             {currentStep !== TOTAL_STEPS && <ArrowRight className="w-4 h-4" data-magicpath-id="22" data-magicpath-path="OnboardingFlow.tsx" />}
           </button>

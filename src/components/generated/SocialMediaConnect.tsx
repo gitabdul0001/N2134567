@@ -59,42 +59,42 @@ const SocialMediaConnect: React.FC = () => {
     connected: false,
     loading: false,
     icon: FacebookIcon,
-    mpid: "3bd45ebe-60ff-4d64-9429-d382d33e1917"
+    mpid: "fc830bf1-2340-4146-9437-1b7136f63c3c"
   }, {
     id: 'instagram',
     name: 'Instagram',
     connected: false,
     loading: false,
     icon: InstagramIcon,
-    mpid: "64cade96-7760-4731-83bd-aab0e7e570f2"
+    mpid: "76c4b00a-6052-435c-a40a-690b69492cae"
   }, {
     id: 'twitter',
     name: 'X',
     connected: false,
     loading: false,
     icon: XIcon,
-    mpid: "c9140521-eefa-49be-bd4c-b9f22d5cf56b"
+    mpid: "f12dcae0-1bf2-440f-a130-9ee84ca21f1a"
   }, {
     id: 'linkedin',
     name: 'LinkedIn',
     connected: false,
     loading: false,
     icon: LinkedInIcon,
-    mpid: "dcb8e589-09fa-478c-bbae-602e8251cfd2"
+    mpid: "dd6a4fec-43cb-4ec4-8447-3db03907fb44"
   }, {
     id: 'youtube',
     name: 'YouTube',
     connected: false,
     loading: false,
     icon: YouTubeIcon,
-    mpid: "12fe25f8-098b-4556-b9f0-8528b0decde6"
+    mpid: "1f153c46-4b70-498d-9875-2f0ffe3dcd6c"
   }, {
     id: 'tiktok',
     name: 'TikTok',
     connected: false,
     loading: false,
     icon: TikTokIcon,
-    mpid: "fc9cf91a-9bc4-4d2e-a596-3d8fbb92fa9a"
+    mpid: "8cb65779-3d7e-46fb-8ead-2194a57d3e39"
   }]);
   const handleConnect = async (platformId: string) => {
     setPlatforms(prev => prev.map(p => p.id === platformId ? {
@@ -111,12 +111,12 @@ const SocialMediaConnect: React.FC = () => {
     } : p));
   };
   const connectedCount = platforms.filter(p => p.connected).length;
-  return <div className="text-center space-y-12" data-magicpath-id="35" data-magicpath-path="SocialMediaConnect.tsx">
-      <div className="space-y-6" data-magicpath-id="36" data-magicpath-path="SocialMediaConnect.tsx">
-        <h2 className="text-4xl md:text-5xl font-light text-gray-900" data-magicpath-id="37" data-magicpath-path="SocialMediaConnect.tsx">
+  return <div className="text-center space-y-8 md:space-y-12" data-magicpath-id="35" data-magicpath-path="SocialMediaConnect.tsx">
+      <div className="space-y-4 md:space-y-6" data-magicpath-id="36" data-magicpath-path="SocialMediaConnect.tsx">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-gray-900 px-4" data-magicpath-id="37" data-magicpath-path="SocialMediaConnect.tsx">
           Connect Your Accounts
         </h2>
-        <p className="text-lg text-gray-500 max-w-md mx-auto font-light" data-magicpath-id="38" data-magicpath-path="SocialMediaConnect.tsx">
+        <p className="text-base md:text-lg text-gray-500 max-w-md mx-auto font-light px-4" data-magicpath-id="38" data-magicpath-path="SocialMediaConnect.tsx">
           Link your social media accounts to start managing all your content from one place.
         </p>
         {connectedCount > 0 && <p className="text-sm text-gray-600 font-light" data-magicpath-id="39" data-magicpath-path="SocialMediaConnect.tsx">
@@ -124,7 +124,7 @@ const SocialMediaConnect: React.FC = () => {
           </p>}
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto" data-magicpath-id="40" data-magicpath-path="SocialMediaConnect.tsx">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 max-w-2xl mx-auto px-4" data-magicpath-id="40" data-magicpath-path="SocialMediaConnect.tsx">
         {platforms.map((platform, index) => <motion.div key={platform.id} initial={{
         opacity: 0,
         y: 20
@@ -133,9 +133,9 @@ const SocialMediaConnect: React.FC = () => {
         y: 0
       }} transition={{
         delay: index * 0.1
-      }} className={`relative p-6 rounded-2xl border transition-all duration-300 ${platform.connected ? 'border-gray-300 bg-gray-50' : 'border-gray-200 bg-white hover:border-gray-300'}`} data-magicpath-uuid={(platform as any)["mpid"] ?? "unsafe"} data-magicpath-id="41" data-magicpath-path="SocialMediaConnect.tsx">
-            <div className="flex flex-col items-center space-y-4" data-magicpath-uuid={(platform as any)["mpid"] ?? "unsafe"} data-magicpath-id="42" data-magicpath-path="SocialMediaConnect.tsx">
-              <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center" data-magicpath-uuid={(platform as any)["mpid"] ?? "unsafe"} data-magicpath-id="43" data-magicpath-path="SocialMediaConnect.tsx">
+      }} className={`relative p-4 md:p-6 rounded-2xl border transition-all duration-300 ${platform.connected ? 'border-gray-300 bg-gray-50' : 'border-gray-200 bg-white hover:border-gray-300'}`} data-magicpath-uuid={(platform as any)["mpid"] ?? "unsafe"} data-magicpath-id="41" data-magicpath-path="SocialMediaConnect.tsx">
+            <div className="flex flex-col items-center space-y-3 md:space-y-4" data-magicpath-uuid={(platform as any)["mpid"] ?? "unsafe"} data-magicpath-id="42" data-magicpath-path="SocialMediaConnect.tsx">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gray-100 flex items-center justify-center" data-magicpath-uuid={(platform as any)["mpid"] ?? "unsafe"} data-magicpath-id="43" data-magicpath-path="SocialMediaConnect.tsx">
                 <platform.icon data-magicpath-uuid={(platform as any)["mpid"] ?? "unsafe"} data-magicpath-id="44" data-magicpath-path="SocialMediaConnect.tsx" />
               </div>
               
@@ -143,7 +143,7 @@ const SocialMediaConnect: React.FC = () => {
                 {platform.name}
               </h3>
 
-              <button onClick={() => handleConnect(platform.id)} disabled={platform.connected || platform.loading} className={`w-full py-2 px-4 rounded-xl text-sm font-light transition-all duration-200 ${platform.connected ? 'bg-gray-100 text-gray-500 cursor-default' : platform.loading ? 'bg-gray-100 text-gray-500 cursor-not-allowed' : 'bg-gray-900 text-white hover:bg-gray-800'}`} data-magicpath-uuid={(platform as any)["mpid"] ?? "unsafe"} data-magicpath-id="46" data-magicpath-path="SocialMediaConnect.tsx">
+              <button onClick={() => handleConnect(platform.id)} disabled={platform.connected || platform.loading} className={`w-full py-2 px-3 md:px-4 rounded-xl text-xs md:text-sm font-light transition-all duration-200 ${platform.connected ? 'bg-gray-100 text-gray-500 cursor-default' : platform.loading ? 'bg-gray-100 text-gray-500 cursor-not-allowed' : 'bg-gray-900 text-white hover:bg-gray-800'}`} data-magicpath-uuid={(platform as any)["mpid"] ?? "unsafe"} data-magicpath-id="46" data-magicpath-path="SocialMediaConnect.tsx">
                 {platform.loading ? <div className="flex items-center justify-center space-x-2" data-magicpath-uuid={(platform as any)["mpid"] ?? "unsafe"} data-magicpath-id="47" data-magicpath-path="SocialMediaConnect.tsx">
                     <Loader2 className="w-3 h-3 animate-spin" data-magicpath-uuid={(platform as any)["mpid"] ?? "unsafe"} data-magicpath-id="48" data-magicpath-path="SocialMediaConnect.tsx" />
                     <span data-magicpath-uuid={(platform as any)["mpid"] ?? "unsafe"} data-magicpath-id="49" data-magicpath-path="SocialMediaConnect.tsx">Connecting</span>
@@ -164,7 +164,7 @@ const SocialMediaConnect: React.FC = () => {
           </motion.div>)}
       </div>
 
-      <div className="text-xs text-gray-400 max-w-md mx-auto font-light" data-magicpath-id="55" data-magicpath-path="SocialMediaConnect.tsx">
+      <div className="text-xs text-gray-400 max-w-md mx-auto font-light px-4" data-magicpath-id="55" data-magicpath-path="SocialMediaConnect.tsx">
         <p data-magicpath-id="56" data-magicpath-path="SocialMediaConnect.tsx">
           You can connect more accounts later from your dashboard settings.
         </p>
