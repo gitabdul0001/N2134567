@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Check, ArrowRight } from 'lucide-react';
@@ -13,7 +15,7 @@ const CompletionScreen: React.FC = () => {
       stiffness: 200,
       damping: 20,
       delay: 0.2
-    }} className="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-gray-900 flex items-center justify-center" data-magicpath-id="1" data-magicpath-path="CompletionScreen.tsx">
+    }} className="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center shadow-lg" data-magicpath-id="1" data-magicpath-path="CompletionScreen.tsx">
         <Check className="w-8 h-8 md:w-10 md:h-10 text-white" data-magicpath-id="2" data-magicpath-path="CompletionScreen.tsx" />
       </motion.div>
 
@@ -42,7 +44,7 @@ const CompletionScreen: React.FC = () => {
     }} transition={{
       delay: 0.6
     }} className="max-w-sm mx-auto px-4" data-magicpath-id="6" data-magicpath-path="CompletionScreen.tsx">
-        <div className="bg-gray-50 rounded-3xl p-6 md:p-8 border border-gray-100" data-magicpath-id="7" data-magicpath-path="CompletionScreen.tsx">
+        <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-6 md:p-8 border border-gray-100 shadow-sm" data-magicpath-id="7" data-magicpath-path="CompletionScreen.tsx">
           <h3 className="text-base md:text-lg font-light text-gray-900 mb-4 md:mb-6" data-magicpath-id="8" data-magicpath-path="CompletionScreen.tsx">
             What You've Accomplished
           </h3>
@@ -57,7 +59,7 @@ const CompletionScreen: React.FC = () => {
           }} transition={{
             delay: 0.8 + index * 0.1
           }} className="flex items-center space-x-3" data-magicpath-uuid={(achievement as any)["mpid"] ?? "unsafe"} data-magicpath-id="10" data-magicpath-path="CompletionScreen.tsx">
-                <div className="w-4 h-4 bg-gray-900 rounded-full flex items-center justify-center flex-shrink-0" data-magicpath-uuid={(achievement as any)["mpid"] ?? "unsafe"} data-magicpath-id="11" data-magicpath-path="CompletionScreen.tsx">
+                <div className="w-4 h-4 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center flex-shrink-0" data-magicpath-uuid={(achievement as any)["mpid"] ?? "unsafe"} data-magicpath-id="11" data-magicpath-path="CompletionScreen.tsx">
                   <Check className="w-2 h-2 text-white" data-magicpath-uuid={(achievement as any)["mpid"] ?? "unsafe"} data-magicpath-id="12" data-magicpath-path="CompletionScreen.tsx" />
                 </div>
                 <span className="text-gray-700 font-light text-xs md:text-sm text-left" data-magicpath-uuid={(achievement as any)["mpid"] ?? "unsafe"} data-magicpath-id="13" data-magicpath-path="CompletionScreen.tsx">
@@ -100,7 +102,7 @@ const CompletionScreen: React.FC = () => {
     }} transition={{
       delay: 1.4
     }} className="pt-4" data-magicpath-id="20" data-magicpath-path="CompletionScreen.tsx">
-        <div className="inline-flex items-center space-x-2 px-4 md:px-6 py-2 md:py-3 bg-gray-900 text-white rounded-full font-light text-xs md:text-sm" data-magicpath-id="21" data-magicpath-path="CompletionScreen.tsx">
+        <div className="inline-flex items-center space-x-2 px-4 md:px-6 py-2 md:py-3 bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-full font-light text-xs md:text-sm shadow-sm" data-magicpath-id="21" data-magicpath-path="CompletionScreen.tsx">
           <span data-magicpath-id="22" data-magicpath-path="CompletionScreen.tsx">Welcome to Reaxo</span>
         </div>
       </motion.div>

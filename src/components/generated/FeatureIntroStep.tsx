@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, BarChart3, Clock, TrendingUp, Users, Zap } from 'lucide-react';
@@ -19,15 +21,15 @@ const FeatureIntroStep: React.FC<FeatureIntroStepProps> = ({
         features: [{
           icon: Clock,
           text: 'Optimal timing recommendations',
-          mpid: "66d88bf0-1ac6-4cd3-890f-f15c942e6134"
+          mpid: "717cd227-e04b-4c01-8c66-bb9789cf425a"
         }, {
           icon: Zap,
           text: 'Bulk scheduling across platforms',
-          mpid: "58d807ce-128c-41d0-909d-e22b8a4ec210"
+          mpid: "b9b76be5-d06e-4d81-8c42-55fdc8ef7764"
         }, {
           icon: Users,
           text: 'Team collaboration tools',
-          mpid: "374e5102-341f-42fe-8698-aaa0cc2dc1f0"
+          mpid: "0858c648-ad76-4e7f-a6b4-74d87e8510fa"
         }]
       };
     } else {
@@ -36,15 +38,15 @@ const FeatureIntroStep: React.FC<FeatureIntroStepProps> = ({
         features: [{
           icon: TrendingUp,
           text: 'Real-time performance metrics',
-          mpid: "5799b825-b33c-4e59-bedb-46cc2764b8dc"
+          mpid: "a97928e4-b55e-46fd-987c-eac5ba21916f"
         }, {
           icon: Users,
           text: 'Audience insights & demographics',
-          mpid: "d0f6e004-185a-4d5c-b937-845840723b06"
+          mpid: "43fc8ef6-08cc-408c-adfe-1751d0682817"
         }, {
           icon: Zap,
           text: 'Competitor analysis',
-          mpid: "21551f00-914f-4d6f-b6e0-1eac6038b653"
+          mpid: "b62ff0e3-f5e4-42d3-b6ef-c23932e43bf5"
         }]
       };
     }
@@ -64,7 +66,7 @@ const FeatureIntroStep: React.FC<FeatureIntroStepProps> = ({
       duration: 0.5,
       ease: "easeOut"
     }} className="space-y-4 md:space-y-6" data-magicpath-id="1" data-magicpath-path="FeatureIntroStep.tsx">
-        <div className="w-12 h-12 md:w-16 md:h-16 mx-auto rounded-2xl bg-gray-100 flex items-center justify-center" data-magicpath-id="2" data-magicpath-path="FeatureIntroStep.tsx">
+        <div className="w-12 h-12 md:w-16 md:h-16 mx-auto rounded-2xl bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center shadow-sm" data-magicpath-id="2" data-magicpath-path="FeatureIntroStep.tsx">
           <MainIcon className="w-6 h-6 md:w-8 md:h-8 text-gray-600" data-magicpath-id="3" data-magicpath-path="FeatureIntroStep.tsx" />
         </div>
 
@@ -78,7 +80,7 @@ const FeatureIntroStep: React.FC<FeatureIntroStepProps> = ({
         </div>
       </motion.div>
 
-      <div className="max-w-md mx-auto p-6 md:p-8 rounded-3xl bg-gray-50 border border-gray-100 mx-4" data-magicpath-id="7" data-magicpath-path="FeatureIntroStep.tsx">
+      <div className="max-w-md mx-auto p-6 md:p-8 rounded-3xl bg-gradient-to-br from-gray-50 to-white border border-gray-100 mx-4 shadow-sm" data-magicpath-id="7" data-magicpath-path="FeatureIntroStep.tsx">
         <div className="space-y-4 md:space-y-6" data-magicpath-id="8" data-magicpath-path="FeatureIntroStep.tsx">
           <h3 className="text-base md:text-lg font-light text-gray-900" data-magicpath-id="9" data-magicpath-path="FeatureIntroStep.tsx">
             Key Features
@@ -93,8 +95,8 @@ const FeatureIntroStep: React.FC<FeatureIntroStepProps> = ({
             x: 0
           }} transition={{
             delay: 0.3 + index * 0.1
-          }} className="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 bg-white rounded-xl" data-magicpath-uuid={(feature as any)["mpid"] ?? "unsafe"} data-magicpath-id="11" data-magicpath-path="FeatureIntroStep.tsx">
-                <div className="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0" data-magicpath-uuid={(feature as any)["mpid"] ?? "unsafe"} data-magicpath-id="12" data-magicpath-path="FeatureIntroStep.tsx">
+          }} className="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 bg-white rounded-xl border border-gray-100 shadow-sm" data-magicpath-uuid={(feature as any)["mpid"] ?? "unsafe"} data-magicpath-id="11" data-magicpath-path="FeatureIntroStep.tsx">
+                <div className="w-7 h-7 md:w-8 md:h-8 rounded-lg bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center flex-shrink-0" data-magicpath-uuid={(feature as any)["mpid"] ?? "unsafe"} data-magicpath-id="12" data-magicpath-path="FeatureIntroStep.tsx">
                   <feature.icon className="w-3 h-3 md:w-4 md:h-4 text-gray-600" data-magicpath-uuid={(feature as any)["mpid"] ?? "unsafe"} data-magicpath-id="13" data-magicpath-path="FeatureIntroStep.tsx" />
                 </div>
                 <span className="text-gray-700 font-light text-xs md:text-sm text-left" data-magicpath-uuid={(feature as any)["mpid"] ?? "unsafe"} data-magicpath-field="text:unknown" data-magicpath-id="14" data-magicpath-path="FeatureIntroStep.tsx">

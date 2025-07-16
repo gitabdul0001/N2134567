@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { motion } from 'framer-motion';
 interface ProgressIndicatorProps {
@@ -17,7 +19,7 @@ const ProgressIndicator: React.FC<ProgressIndicatorProps> = ({
       const isActive = stepNumber === currentStep;
       const isCompleted = stepNumber < currentStep;
       return <div key={stepNumber} className="flex items-center" data-magicpath-id="1" data-magicpath-path="ProgressIndicator.tsx">
-            <motion.div className={`w-2 h-2 rounded-full transition-all duration-300 ${isActive ? 'bg-gray-900 scale-125' : isCompleted ? 'bg-gray-400' : 'bg-gray-200'}`} initial={false} animate={{
+            <motion.div className={`w-2 h-2 rounded-full transition-all duration-300 ${isActive ? 'bg-gray-900 scale-125 shadow-sm' : isCompleted ? 'bg-gray-400' : 'bg-gray-200'}`} initial={false} animate={{
           scale: isActive ? 1.25 : 1
         }} transition={{
           duration: 0.2
